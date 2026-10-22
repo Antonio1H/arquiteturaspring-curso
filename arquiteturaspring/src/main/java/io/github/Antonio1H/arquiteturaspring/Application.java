@@ -53,8 +53,7 @@ public class Application {
 		// O valor normalmente é definido em application.properties
 		// ou em outro arquivo/fonte de configuração.
 		// Se a propriedade não existir, o resultado será null.
-		String applicationName =
-				environment.getProperty("spring.application.name");
+		String applicationName = environment.getProperty("spring.application.name");
 
 		// Exibe no terminal o nome encontrado nas configurações.
 		System.out.println("Application Name: " + applicationName);
