@@ -1,6 +1,6 @@
 package io.github.Antonio1H.arquiteturaspring.montadora;
 
-public enum Motor {;
+public class Motor {
 
     private String modelo;
     private Integer cavalos;
@@ -46,5 +46,16 @@ public enum Motor {;
 
     public void setModelo(String modelo) {
         this.modelo = modelo;
+    }
+
+    @Override
+    public String toString() {
+        return "Motor{" +
+                "modelo='" + modelo + '\'' +
+                ", cavalos=" + cavalos +
+                ", cilindros=" + cilindros +
+                ", litragem=" + litragem +
+                ", tipo=" + tipo +
+                '}';
     }
 }
