@@ -4,11 +4,13 @@ import io.github.Antonio1H.arquiteturaspring.montadora.Motor;
 import io.github.Antonio1H.arquiteturaspring.montadora.TipoMotor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class MontadoraConfiguration {
 
     @Bean(name = "motorAspirado")
+    @Primary // caso não especifique o bean que eu quero injetar esse sera o escolhido automaticamente
     public Motor motorAspirado() {
         var motor = new Motor();
         motor.setCavalos(120);
